@@ -1,0 +1,957 @@
+
+ :root {
+	--pausAR-UI-theme-background-color: var(--wp-admin-theme-color, #db0812);
+	--pausAR-UI-theme-border-color: rgb(224,224,224);
+	--pausAR-UI-theme-border-radius: 2px;
+	--pausAR-UI-theme-fontColor: var(--wp--preset--color--contrast, white);
+	/*--pausAR-UI-theme-font-family: var(--wp--preset--font-family--system-font, Arial, Helvetica, sans-serif)*/
+ }
+
+
+.pausAR-UI-widgetContainer {
+    
+}
+
+.pausAR-UI-elementorDisabled {
+    pointer-events: none !important;
+    opacity: 0.4;
+}
+
+body .pausAR-UI-modelPreviewContainer .pausAR-UI-modelViewer {
+	width: 100% !important;
+    height: 100% !important;
+	overflow: hidden;
+    border-radius: 0;
+    /*position: absolute !important;*/
+}
+
+body .pausAR-UI-modelViewer::part(default-progress-bar) {/*Hides the default progress-bar*/
+    display: none;
+}
+
+body .pausAR-UI-modelPreviewContainer {
+    position: relative;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	/*padding: 0 0 500px 0;*/
+    padding: 0;
+	margin: 0px;
+    /*overflow: hidden;*/
+}
+
+body .pausAR-UI-modelPreviewContainer .pausAR-UI-modelPreviewInterface {    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none !important;
+}
+
+body .pausAR-UI-modelPreviewContainer .pausAR-UI-modelPreviewInterface * {
+    pointer-events: all !important;
+}
+
+body .pausAR-UI-modelPreviewContainer .pausAR-UI-modelPreviewInterface button {
+    cursor: pointer !important;
+}
+
+body .pausAR-UI-watermarkContainer {
+    width: 100% !important;
+    height: max-content !important;
+    position: relative !important;
+    padding: 0px;
+    margin: 0px;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+
+}
+
+body .pausAR-UI-watermarkContainer .pausAR-UI-watermarkLink {
+    position: relative !important;
+    top: 0 !important;/*default*/
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    margin: 8px 0px 0px auto;
+    display: inline-block !important;
+    width: max-content !important;
+    height: max-content !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+}
+
+body .pausAR-UI-watermarkContainer .pausAR-UI-watermarkLink .pausAR-UI-watermark {
+    cursor: pointer !important;
+    transition: all .3s !important;
+    position: relative !important;
+    top: 0 !important;/*default*/
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    display: inline-block !important;
+    width: 80px !important;
+    height: max-content !important;
+    visibility: visible !important;
+    opacity: 0.33 !important;
+}
+body .pausAR-UI-watermarkContainer .pausAR-UI-watermarkLink .pausAR-UI-watermark:hover {
+    opacity: 1 !important;
+}
+
+/* == Shortcode == */
+
+.pausAR-UI-shortcodeViewerContainer {
+
+	width: 100%;
+	height: max-content;
+	min-height: 12px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+.pausAR-UI-imagePlaceholder {
+    box-sizing: content-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+    stroke-dasharray: 3;
+    color: inherit;
+    display: flex;
+    box-shadow: none;
+    min-width: 100px;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    background-color: hsla(0,0%,100%,.1);
+    border: 1px dashed;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.pausAR-UI-buttonContainer {
+
+	/*display: inline-flex;*/
+	position: relative;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: max-content;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.pausAR-UI-buttonContainer.pausAR-UI-buttonContainerTop {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.pausAR-UI-buttonContainer.pausAR-UI-buttonContainerBottom {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.pausAR-UI-previewContainer {
+	display: inline-flex;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.pausAR-UI-previewImage {
+
+	position: relative;
+	top: 0px;
+	margin: 0;
+	padding: 0;
+
+}
+
+.pausAR-UI-previewImage-left .pausAR-UI-previewImage {
+	transform: translateX(0%);
+	left: 0px;
+}
+
+.pausAR-UI-previewImage-right .pausAR-UI-previewImage {
+	transform: translateX(0%);
+	left: unset;
+	right: 0px;
+	margin-left: auto;
+}
+
+.pausAR-UI-previewImage-center .pausAR-UI-previewImage {
+	transform: translateX(-50%);
+	left: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .pausAR-UI-previewImage--tabletleft .pausAR-UI-previewImage {
+        transform: translateX(0%);
+        left: 0px;
+    }
+    
+    .pausAR-UI-previewImage--tabletright .pausAR-UI-previewImage {
+        transform: translateX(0%);
+        left: unset;
+        right: 0px;
+        margin-left: auto;
+    }
+    
+    .pausAR-UI-previewImage--tabletcenter .pausAR-UI-previewImage {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pausAR-UI-previewImage--mobileleft .pausAR-UI-previewImage {
+        transform: translateX(0%);
+        left: 0px;
+    }
+    
+    .pausAR-UI-previewImage--mobileright .pausAR-UI-previewImage {
+        transform: translateX(0%);
+        left: unset;
+        right: 0px;
+        margin-left: auto;
+    }
+    
+    .pausAR-UI-previewImage--mobilecenter .pausAR-UI-previewImage {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+
+body .pausAR-UI-elementHide {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+body .pausAR-UI-ArButton {
+    position: relative;
+	display: inline-block;
+    visibility: visible;
+    /*transform: translateX(-50%);*/
+    /*left: 50%;*/
+	background-color: var(--e-global-color-primary, var(--pausAR-UI-theme-background-color));
+	padding: 12px 24px;
+	border-radius: 3px;
+	transition: all .3s;
+	color: var(--pausAR-UI-theme-fontColor, white);
+	fill: var(--pausAR-UI-theme-fontColor, white);
+	cursor: pointer;
+	font-size: 15px;
+    box-shadow: none;
+    text-decoration: none;
+    line-height: 1;
+}
+
+body .pausAR-UI-ArButton .pausAR-UI-ArButtonWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+body .pausAR-UI-ArButton .pausAR-UI-ArButtonWrapper .pausAR-UI-buttonIcon {
+    height: 100%;
+}
+
+/*Fa-Fa to SVG Convertion*/
+body .pausAR-UI-ArButton .pausAR-UI-ArButtonWrapper .pausAR-UI-buttonIcon .e-font-icon-svg {
+	height: 1em;
+}
+
+body .pausAR-UI-ArButton .pausAR-UI-ArButtonWrapper .pausAR-UI-buttonIcon > svg, body .pausAR-UI-ArButton .pausAR-UI-ArButtonWrapper .pausAR-UI-buttonIcon > img {
+    width: auto;
+    height: 1em;
+}
+/**/
+
+body .pausAR-UI-ArButton .pausAR-UI-ArButtonWrapper  .pausAR-UI-ArButtonLabel {
+	/*flex-grow: 1;*/
+    /*order: 10;*/
+    display: inline-block;
+}
+
+.pausAR-UI-ArButton-center .pausAR-UI-buttonContainer {
+	text-align: center;
+}
+.pausAR-UI-ArButton-center .pausAR-UI-ArButton {
+    width: unset;
+}
+.pausAR-UI-ArButton-left .pausAR-UI-buttonContainer {
+	text-align: left;
+}
+.pausAR-UI-ArButton-left .pausAR-UI-ArButton {
+    width: unset;
+}
+.pausAR-UI-ArButton-right .pausAR-UI-buttonContainer {
+	text-align: right;
+}
+.pausAR-UI-ArButton-right .pausAR-UI-ArButton {
+    width: unset;
+}
+.pausAR-UI-ArButton-justify .pausAR-UI-buttonContainer {
+	text-align: center;
+}
+.pausAR-UI-ArButton-justify .pausAR-UI-ArButton {
+	width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .pausAR-UI-ArButton--tabletcenter .pausAR-UI-buttonContainer {
+        text-align: center;
+    }
+    .pausAR-UI-ArButton--tabletcenter .pausAR-UI-ArButton {
+        width: unset;
+    }
+    .pausAR-UI-ArButton--tabletleft .pausAR-UI-buttonContainer {
+        text-align: left;
+    }
+    .pausAR-UI-ArButton--tabletleft .pausAR-UI-ArButton {
+        width: unset;
+    }
+    .pausAR-UI-ArButton--tabletright .pausAR-UI-buttonContainer {
+        text-align: right;
+    }
+    .pausAR-UI-ArButton--tabletright .pausAR-UI-ArButton {
+        width: unset;
+    }
+    .pausAR-UI-ArButton--tabletjustify .pausAR-UI-buttonContainer {
+        text-align: center;
+    }
+    .pausAR-UI-ArButton--tabletjustify .pausAR-UI-ArButton {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pausAR-UI-ArButton--mobilecenter .pausAR-UI-buttonContainer {
+        text-align: center;
+    }
+    .pausAR-UI-ArButton--mobilecenter .pausAR-UI-ArButton {
+        width: unset;
+    }
+    .pausAR-UI-ArButton--mobileleft .pausAR-UI-buttonContainer {
+        text-align: left;
+    }
+    .pausAR-UI-ArButton--mobileleft .pausAR-UI-ArButton {
+        width: unset;
+    }
+    .pausAR-UI-ArButton--mobileright .pausAR-UI-buttonContainer {
+        text-align: right;
+    }
+    .pausAR-UI-ArButton--mobileright .pausAR-UI-ArButton {
+        width: unset;
+    }
+    .pausAR-UI-ArButton--mobilejustify .pausAR-UI-buttonContainer {
+        text-align: center;
+    }
+    .pausAR-UI-ArButton--mobilejustify .pausAR-UI-ArButton {
+        width: 100%;
+    }
+}
+
+
+/*===================================================*/
+/* LoadingScreen */
+/*===================================================*/
+
+.pausAR-UI-loadingScreen {
+    position: absolute;
+    z-index: 9999999;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    display: none;
+}
+
+.pausAR-UI-loadingScreenUpperContainer {
+    position: relative;
+    width: 100%;
+    height: 61.8%;
+    left: 0px;
+    top: 0px;
+    background-color: #db0812;
+    border-style: none none solid none;
+    border-width: 2px;
+    border-color: rgba(0,0,0,.25);
+}
+
+.pausAR-UI-loadingScreenUpperContainerBackgroundShadow {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,.075) 0%, rgba(0,0,0,.25) 14.9%,rgba(0,0,0,.20) 15%,transparent 100%);
+}
+
+.pausAR-UI-loadingScreenLine {
+    background-color: #db0812;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 12px;
+}
+
+.pausAR-UI-loadingScreenLogoContainer {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.pausAR-UI-loadingScreenSpinner {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: pausAR-UI-LoadingScreenSpin 1.25s infinite linear;
+    background-image: -moz-conic-gradient(rgba(255,255,255,0) 0deg, rgba(255,255,255,0) 40deg, rgba(255,255,255,1));
+    background-image: -webkit-conic-gradient(rgba(255,255,255,0) 0deg, rgba(255,255,255,0) 40deg, rgba(255,255,255,1));
+    background-image: conic-gradient(rgba(255,255,255,0) 0deg, rgba(255,255,255,0) 40deg, rgba(255,255,255,1));
+
+}
+
+.pausAR-UI-loadingScreenImageContainer {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    margin: 0px;
+    border-radius: 50%;
+    border-color: #db0812;
+    border-width: 4px;
+    border-style: solid;
+
+}
+
+.pausAR-UI-loadingScreenImageContainerContent {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #db0812;
+}
+
+.pausAR-UI-loadingScreenProgressWrapper {
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    height: 65%;
+    width: 85%;
+    max-width: 320px;
+    max-height: 270px;
+
+}
+
+
+.pausAR-UI-loadingScreenProgressWrapperUpper {
+    width: 100%;
+    height: 61.8%;
+    position: relative;
+    top: 0px;
+    left: 0px
+}
+.pausAR-UI-loadingScreenProgressWrapperLower {
+    width: 100%;
+    height: 38.2%;
+    position: relative;
+    bottom: 0px;
+    left: 0px
+}
+
+.pausAR-UI-loadingScreenText {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pausAR-UI-loadingScreenDropshadow {
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 12px;
+    left: 50%;
+    border-radius: 50%;
+    height: 12px;
+    width: 85%;
+    max-width: 300px;
+    background-color: rgba(0,0,0,.1);
+        
+}
+
+.pausAR-UI-loadingScreenLowerContainer{
+    position: absolute;
+    width: 100%;
+    height: 38.2%;
+    left: 0px;
+    bottom: 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pausAR-UI-loadingScreenLowerContainerCenterWrapper {
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    max-height: 360px;
+}
+
+.pausAR-UI-projectNameContainer {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    display: flex;
+}
+
+.pausAR-UI-projectNameWrapper {
+    position: relative;
+    width: 80%;
+    max-width: 640px;
+    text-align: center;
+    margin: auto;
+}
+
+.pausAR-UI-sponsorTextWrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 40px;
+}
+
+.pausAR-UI-sponsorText {
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.pausAR-UI-sponsorText a, .pausAR-UI-sponsorText a:hover, .pausAR-UI-sponsorText a:active {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pausAR-UI-loadingScreenProjectNameHeader {
+    position: relative;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 16px 0px;
+}
+
+.pausAR-UI-loadingScreenProjectNameContent {
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Media Queries*/
+
+@media screen and (max-height: 600px) {
+
+    .pausAR-UI-loadingScreenLogoContainer {
+        width: 110px;
+        height: 110px;
+    }
+
+    .pausAR-UI-loadingScreenImageContainer {
+        
+        border-width: 3px;
+    }
+    
+
+}
+
+@media screen and (max-height: 540px) {
+
+    .pausAR-UI-loadingScreenText {
+        font-size: 20px;
+    }
+    
+}
+
+  
+  @media screen and (max-height: 520px) {
+
+    .pausAR-UI-loadingScreenLine {
+        width: 100vw;
+    }
+
+    .pausAR-UI-loadingScreenDropshadow, .pausAR-UI-loadingScreenUpperContainerBackgroundShadow {
+        display: none;
+    }
+    
+    .pausAR-UI-loadingScreenUpperContainer {
+        display: inline-block;
+        height: 100%;
+        max-height: 100%;
+        width: 38.2%;
+        top: 0px;
+        left: 0px;
+        border-style: none solid none none;
+        border-width: 1px;
+        border-image: 
+        linear-gradient(
+            to bottom, 
+            rgba(0,0,0,0) 10%,
+            #bcbcbc 45%,
+            #bcbcbc 55%, 
+            rgba(0,0,0,0) 90%
+        ) 1 100%;
+    }
+    .pausAR-UI-loadingScreenLowerContainer {
+        display: inline-block;
+        height: calc(100% - 12px);
+        max-height: 100%;
+        width: 61.8%;
+        top: 12px;
+        right: 0px;
+        left: auto;
+    }
+
+    .pausAR-UI-loadingScreenLogoContainer {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pausAR-UI-loadingScreenImageContainer {
+        
+        border-width: 4px;
+    }
+
+    .pausAR-UI-loadingScreenText {
+        font-size: 24px;
+    }
+  }
+
+  @media screen and (max-height: 340px) {
+    .pausAR-UI-loadingScreenLogoContainer {
+        width: 110px;
+        height: 110px;
+    }
+
+    .pausAR-UI-loadingScreenImageContainer {
+        
+        border-width: 2px;
+    }
+
+    .pausAR-UI-loadingScreenText {
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-height: 260px) {
+
+    .pausAR-UI-loadingScreenLogoContainer {
+        width: 84px;
+        height: 84px;
+    }
+
+    .pausAR-UI-loadingScreenImageContainer {
+        
+        border-width: 2px;
+    }
+
+    .pausAR-UI-loadingScreenText {
+        font-size: 16px;
+    }
+  }
+
+  /*Animations*/
+  @keyframes pausAR-UI-LoadingScreenSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+/* == Elementor == */
+
+.pausAR-UI-elementorViewerContainer {
+
+	width: 100%;
+	height: max-content;
+	min-height: 12px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+/* Elementor Responsive Queries */
+[data-elementor-device-mode=mobile] .elementor-widget-container .pausAR-UI-modelPreviewContainer {
+    height: 275px;
+    /*padding: 0 0 275px 0;*/
+}
+[data-elementor-device-mode=tablet] .elementor-widget-container .pausAR-UI-modelPreviewContainer,
+[data-elementor-device-mode=desktop] .elementor-widget-container .pausAR-UI-modelPreviewContainer {
+    height: 500px;
+    /*padding: 0 0 500px 0;*/
+}
+
+.pausAR-UI-buttonContainer.pausAR-UI-buttonContainerTop {
+    margin-bottom: 15px;
+}
+.pausAR-UI-buttonContainer.pausAR-UI-buttonContainerBottom {
+    margin-top: 15px;
+}
+
+/* iframe mode */
+
+body:not(.elementor-editor-active) .pausAR-UI-elementorViewerContainer.pausAR-UI-iframeMode {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    flex-direction: column !important;
+    height: 100vh !important;
+
+    width: calc(100vw - (100vw - 100%)) !important; /*Removes the width of the scrollbar, if visible*/
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    z-index: 99998 !important;/*Wordpress-Menu: 99999*/
+    justify-content: center !important;
+}
+
+body:not(.elementor-editor-active) .pausAR-UI-elementorViewerContainer.pausAR-UI-iframeMode .pausAR-UI-previewContainer {
+    overflow: hidden !important;
+    height: 100% !important;
+}
+
+body:not(.elementor-editor-active) .pausAR-UI-elementorViewerContainer.pausAR-UI-iframeMode .pausAR-UI-modelPreviewContainer {
+    height: 100% !important;
+}
+
+
+
+body:not(.elementor-editor-active) .pausAR-UI-elementorViewerContainer.pausAR-UI-iframeMode .pausAR-UI-previewContainer .pausAR-UI-previewImage {
+    height: 100% !important;
+    object-fit: cover !important;
+    /*object-position: 0% 0 !important;*/
+}
+
+body.elementor-editor-active .pausAR-UI-elementorViewerContainer.pausAR-UI-iframeMode {
+    border: solid 4px red;
+    border-radius: 0;
+    background: repeating-linear-gradient(125deg, rgba(255, 0, 0, .15), rgba(255, 0, 0, .15) 1px, transparent 2px, transparent 9px);
+}
+body.elementor-editor-active .pausAR-UI-elementorViewerContainer.pausAR-UI-iframeMode:hover {
+    background: repeating-linear-gradient(125deg, rgba(255, 0, 0, .3333), rgba(255, 0, 0, .3333) 1px, transparent 2px, transparent 9px);
+}
+body.elementor-editor-active .pausAR-UI-elementorViewerContainer.pausAR-UI-iframeMode:hover::before {
+    content: "Iframe mode active";
+    color: red;
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+    position: absolute;
+    pointer-events: none;
+    z-index: 99999;
+    /*background-color: var(--wp--preset--color--base, transparent);*/
+    background-color: white;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 4px 8px;
+    border: solid 2px red;
+    word-wrap: break-word;
+}
+
+/*============================*/
+/* Fullscreen Mode */
+/*============================*/
+
+body .pausAR-UI-widgetContainer .pausAR-UI-modelPreviewContainer .pausAR-UI-fullscreenButton {
+    display: block;
+    visibility: visible;
+    width: 36px;
+    height: 36px;
+    border-radius: 0px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    margin: 0;
+    padding: 0;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 16.933 16.933' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m2.2836 2.2836v4.7894h1.3941v-3.3953h3.3953v-1.3941zm7.5768 0v1.3941h3.3953v3.3953h1.3941v-4.7894zm-7.5768 7.5768v4.7894h4.7894v-1.3941h-3.3953v-3.3953zm10.972 0v3.3953h-3.3953v1.3941h4.7894v-4.7894z' color='%23000000' fill='%23808080' stroke-width='.87791' style='-inkscape-stroke:none'/%3E%3C/svg%3E");
+    background-color: rgb(255,255,255) !important;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .5;
+}
+
+
+body.elementor-editor-active .pausAR-UI-widgetContainer .pausAR-UI-modelPreviewContainer .pausAR-UI-fullscreenButton.pausAR-UI-elementHide {
+    display: block !important;
+    visibility: visible !important;
+}
+
+body .pausAR-UI-widgetContainer .pausAR-UI-modelPreviewContainer .pausAR-UI-fullscreenButton:hover, .pausAR-UI-widgetContainer .pausAR-UI-modelPreviewContainer .pausAR-UI-fullscreenButton:active {
+    opacity: .75;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 16.933 16.933' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.2252 1.2252v4.7894h1.3942v-3.3951h3.3951v-1.3942h-4.7894zm9.6935 0v1.3942h3.3951v3.3951h1.3942v-4.7894h-4.7894zm-9.6935 9.6935v4.7894h4.7894v-1.3942h-3.3951v-3.3951h-1.3942zm13.089 0v3.3951h-3.3951v1.3942h4.7894v-4.7894h-1.3942z' color='%23000000' fill='%23808080' stroke-width='.87791' style='-inkscape-stroke:none'/%3E%3C/svg%3E");
+}
+
+body .pausAR-UI-widgetContainer.pausAR-UI-widgetFullscreen .pausAR-UI-modelPreviewContainer .pausAR-UI-fullscreenButton {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg style='height:50%25;left:50%25;margin:0px;padding:0px;position:absolute;top:50%25;transform:translate(-50%25, -50%25);width:50%25' version='1.1' viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='matrix(.49995 0 0 .49995 6.5006 6.5008)'%3E%3Cpath d='M 2.7159,0 0,2.7154 10.285,13.0004 0,23.2854 2.7159,26.0008 12.9999,15.7158 23.2849,26.0008 26,23.2854 15.716,13.0004 26,2.7154 23.2849,0 12.9999,10.285 Z' fill='%23191919'/%3E%3C/g%3E%3C/svg%3E%0A") !important;
+    background-color: rgb(255,255,255) !important;
+    border-radius: 50%;
+    bottom: unset;
+    top: 8px;
+}
+
+body .pausAR-UI-widgetContainer.pausAR-UI-widgetFullscreen .pausAR-UI-modelPreviewContainer .pausAR-UI-fullscreenButton:hover, body .pausAR-UI-widgetContainer.pausAR-UI-widgetFullscreen .pausAR-UI-modelPreviewContainer .pausAR-UI-fullscreenButton:active {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg style='height:50%25;left:50%25;margin:0px;padding:0px;position:absolute;top:50%25;transform:translate(-50%25, -50%25);width:50%25' version='1.1' viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='matrix(.49995 0 0 .49995 6.5006 6.5008)'%3E%3Cpath d='M 2.7159,0 0,2.7154 10.285,13.0004 0,23.2854 2.7159,26.0008 12.9999,15.7158 23.2849,26.0008 26,23.2854 15.716,13.0004 26,2.7154 23.2849,0 12.9999,10.285 Z' fill='%23191919'/%3E%3C/g%3E%3C/svg%3E%0A") !important;
+    background-color: rgb(255,255,255) !important;
+    bottom: unset;
+    top: 8px;
+}
+
+body .pausAR-UI-widgetContainer.pausAR-UI-widgetFullscreen {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    flex-direction: column !important;
+    height: 100vh !important;
+    width: calc(100vw - (100vw - 100%)) !important; /*Removes the width of the scrollbar, if visible*/
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    z-index: 99998 !important;/*Wordpress-Menu: 99999*/
+    justify-content: center !important;
+    background-color: rgb(144,144,144) !important;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(144,144,144,1) 100%) !important;
+}
+
+body .pausAR-UI-widgetContainer.pausAR-UI-widgetFullscreen .pausAR-UI-buttonContainer, body .pausAR-UI-widgetContainer.pausAR-UI-widgetFullscreen .pausAR-UI-watermarkContainer {
+    display: none !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+body .pausAR-UI-widgetContainer.pausAR-UI-widgetFullscreen .pausAR-UI-modelPreviewContainer {
+    height: 100% !important;
+    /*padding: 0 !important;*/
+}
+body .pausAR-UI-widgetContainer.pausAR-UI-widgetFullscreen .pausAR-UI-modelPreviewContainer .pausAR-UI-modelViewer {
+    border-radius: 0 !important;
+    mask-image: none !important;
+    mask-repeat: unset !important;
+    mask-position: unset !important;
+    mask-mode: unset !important;
+    mask-size: unset !important;
+}
+
+/*=======================*/
+/* Dimension Lines */
+/*=======================*/
+
+
+body .pausAR-UI-widgetContainer .pausAR-UI-modelViewer .pausAR-UI-dimensionDot {
+    height: 8px !important;
+    width: 8px !important;
+    border-radius: 50% !important;
+    background-color: var(--e-global-color-primary, var(--pausAR-UI-theme-background-color, #16a5e6)) !important;
+    display: none !important;
+    visibility: hidden !important;
+}
+body .pausAR-UI-widgetContainer .pausAR-UI-modelPreviewContainer .pausAR-UI-modelViewer .pausAR-UI-dimensionDim {
+    background: #fff !important;
+    border-radius: 4px !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25) !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    display: block !important;
+    font-family: Futura, Helvetica Neue, sans-serif !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    max-width: 128px !important;
+    overflow-wrap: break-word !important;
+    padding: 0.5em 1em !important;
+    position: absolute !important;
+    width: max-content !important;
+    height: max-content !important;
+    transform: translate3d(-50%, -50%, 0) !important;
+    pointer-events: none !important;
+    --min-hotspot-opacity: 0 !important;
+    direction: ltr !important;
+}
+body .pausAR-UI-widgetContainer .pausAR-UI-modelPreviewContainer .pausAR-UI-modelViewer .pausAR-UI-dimensionLineContainer {
+    pointer-events: none;
+    display: block;
+}
+
+body .pausAR-UI-widgetContainer .pausAR-UI-modelViewer .pausAR-UI-dimensionLineContainer > line.pausAR-UI-dimensionLine {
+    stroke: var(--e-global-color-primary, var(--pausAR-UI-theme-background-color, #16a5e6));
+    stroke-width: 2.5px;
+    stroke-dasharray: 4px;
+    stroke-linecap: round;
+}
+
+@media screen and (max-width: 767px) {
+    body .pausAR-UI-widgetContainer .pausAR-UI-modelPreviewContainer .pausAR-UI-modelViewer .pausAR-UI-dimensionDim {
+        
+        font-size: 0.75em;
+        padding: 0.4em 0.75em;
+        
+    }
+}

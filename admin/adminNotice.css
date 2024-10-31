@@ -1,0 +1,27 @@
+body .pausar-for-elementor-notice .pausar-for-elementor-buttons {
+    margin-top: 16px;
+}
+body .pausar-for-elementor-notice .button {
+    margin-right: 10px;
+}
+body .pausar-for-elementor-notice ul {
+    border-radius: 4px;
+    width: calc(100% - 38px);
+    list-style: disc;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #666;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    overflow: auto;
+    padding: 8px 12px 8px 24px;
+    display: block;
+    position: relative;
+    word-wrap: break-word;
+    page-break-inside: avoid;
+}
+body .pausar-for-elementor-notice ul > li.pausar-for-elementor-rule-contained {
+    opacity: .3333;
+    
+}

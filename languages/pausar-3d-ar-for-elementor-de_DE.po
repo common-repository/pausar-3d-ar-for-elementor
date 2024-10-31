@@ -1,0 +1,1496 @@
+# Copyright (C) 2024 PausAR Studio
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: PausAR 3D AR for Elementor 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pausAR\n"
+"POT-Creation-Date: 2024-08-28T17:34:13+02:00\n"
+"PO-Revision-Date: 2024-08-28 17:34+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Domain: pausar\n"
+
+#. Plugin Name of the plugin
+msgid "PausAR - 3D and AR for Elementor"
+msgstr "PausAR - 3D und AR für Elementor"
+
+#. Plugin URI of the plugin
+msgid "https://www.pausarstudio.de/wordpress-elementor/"
+msgstr "https://www.pausarstudio.de/wordpress-elementor/"
+
+#. Description of the plugin
+msgid ""
+"PausAR is a user-friendly and web-based 3D & augmented reality viewer that "
+"can be easily integrated into any Elementor page."
+msgstr ""
+"PausAR ist ein benutzerfreundlicher und webbasierter 3D- und Augmented-"
+"Reality-Viewer, der problemlos in jede Elementor-Seite integriert werden "
+"kann."
+
+#. Author of the plugin
+msgid "PausAR Studio"
+msgstr "PausAR Studio"
+
+#. Author URI of the plugin
+msgid "https://www.pausarstudio.de/"
+msgstr "https://www.pausarstudio.de/"
+
+#: admin/adminNoticeValidator.php:441 admin/adminNoticeValidator.php:485
+#: admin/adminNoticeValidator.php:523 admin/adminNoticeValidator.php:591
+msgid "Setting up PausAR - Add MimeTypes to the web server"
+msgstr "PausAR Einrichten - Dateiformate zum Webserver hinzufügen"
+
+#: admin/adminNoticeValidator.php:444 admin/adminNoticeValidator.php:488
+#: admin/adminNoticeValidator.php:526 admin/adminNoticeValidator.php:594
+msgid ""
+"PausAR offers the use of specific file formats for Apple devices, which "
+"enable the display of 3D content and AR scenes on iOS devices. However, "
+"these new formats are not supported by most web servers as standard, which "
+"means that some AR scenes cannot be displayed by Apple users. For "
+"unrestricted use of PausAR, the new MimeTypes should be added to the server "
+"configuration."
+msgstr ""
+"PausAR nutzt spezifische Dateiformate für die Darstellung von 3D Inhalten "
+"und AR Szenen auf iOS-Geräten. Diese neuartigen Formate werden nicht "
+"standardmäßig von den meisten Webservern unterstützt, wodurch Nutzer manche "
+"AR Szenen nicht auf iOS-Geräten betrachten können. Für die uneingeschränkte "
+"Nutzung von PausAR sollten die betroffenen Dateiformate (MimeTypes) daher "
+"zur Serverkonfiguration hinzugefügt werden."
+
+#: admin/adminNoticeValidator.php:447 admin/adminNoticeValidator.php:535
+#: admin/adminNoticeValidator.php:597
+msgid "The following lines can be added to the server configuration file:"
+msgstr "Folgende Zeilen sollten zur Serverkonfiguration hinzugefügt werden:"
+
+#. translators: 1: Filepath
+#: admin/adminNoticeValidator.php:463
+msgid ""
+"On an Nginx server, all optional MimeTypes are added to the \"%1$s\" file. "
+"This file can be found in the root folder or must be created by the "
+"administrator."
+msgstr ""
+"Bei einem Nginx-Server werden alle optionalen Dateiformate zu der \"%1$s\"-"
+"Datei hinzugefügt. Diese Datei ist etweder im Hauptverzeichnis des Servers "
+"zu finden oder muss manuell angelegt werden."
+
+#: admin/adminNoticeValidator.php:472 admin/adminNoticeValidator.php:508
+#: admin/adminNoticeValidator.php:577 admin/adminNoticeValidator.php:623
+msgid "Don't show again"
+msgstr "Nicht mehr anzeigen"
+
+#: admin/adminNoticeValidator.php:475 admin/adminNoticeValidator.php:511
+#: admin/adminNoticeValidator.php:580 admin/adminNoticeValidator.php:626
+msgid "Learn more"
+msgstr "Mehr erfahren"
+
+#: admin/adminNoticeValidator.php:491
+msgid ""
+"It cannot be determined exactly which server is currently being used. Adding "
+"the required MimeTypes may vary depending on your server. It's best to get "
+"information from your server provider."
+msgstr ""
+"Es kann nicht genau ermittelt werden, welcher Server aktuell verwendet wird. "
+"Das Hinzufügen der erforderlichen Dateiformate (MimeTypes) kann je nach "
+"Server variieren. Informieren Sie sich hierzu am besten bei Ihrem "
+"Serveranbieter."
+
+#: admin/adminNoticeValidator.php:494
+msgid "The following MimeTypes may need to be added:"
+msgstr "Die Folgenden Dateiformate (MimeTypes) sollten hinzugefügt werden:"
+
+#: admin/adminNoticeValidator.php:531
+msgid ""
+"This server is already sufficiently configured. No lines need to be added."
+msgstr ""
+"Der Server ist bereits ausreichend konfiguriert. Es müssen keine neuen "
+"Befehle hinzugefügt werden."
+
+#. translators: 2: Htaccess-Editors
+#: admin/adminNoticeValidator.php:563 admin/adminNoticeValidator.php:613
+msgid ""
+"On an Apache server, all optional MimeTypes are added to the \"%1$s\" file "
+"via specific commands. The lines shown can be added manually or using "
+"\"%2$s\"."
+msgstr ""
+"Bei einem Apache-Server werden alle optionalen Dateiformate in der \"%1$s\"-"
+"Datei über bestimmte Befehle hinzugefügt. Die aufgeführten Befehle können "
+"dabei manuell oder über diverse \"%2$s\" hinzugefügt werden."
+
+#: admin/adminNoticeValidator.php:565 admin/adminNoticeValidator.php:615
+msgid "Htaccess-Editors"
+msgstr "Htaccess-Editoren"
+
+#. translators: 1: PausAR tag, 2: link to review
+#: admin/menu/adminMenu.php:64
+msgid "If you like %1$s, feel free to give us a %2$s rating."
+msgstr ""
+"Wenn Ihnen %1$s gefällt, können Sie uns gerne eine %2$s-Bewertung geben."
+
+#: admin/menu/adminMenu.php:65 admin/menu/adminMenu.php:112
+#: elementor/pausar-elementor-plugin.php:62
+#: elementor/pausar-elementor-plugin.php:212 pausar-version.php:144
+#: pausar-version.php:166
+msgid "PausAR"
+msgstr "PausAR"
+
+#: admin/menu/adminMenu.php:111 admin/menu/adminMenu.php:138
+msgid "General"
+msgstr "Allgemein"
+
+#: admin/menu/adminMenu.php:124 admin/menu/adminMenu.php:125
+#: admin/menu/adminMenu.php:186
+msgid "Getting Started"
+msgstr "Erste Schritte"
+
+#: admin/menu/adminMenu.php:134
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: admin/menu/adminMenu.php:135
+msgid "Change Log"
+msgstr "Change Log"
+
+#: admin/menu/adminMenu.php:136
+msgid "Contact us"
+msgstr "Kontakt"
+
+#: admin/menu/adminMenu.php:164
+msgid "PausAR Dashboard"
+msgstr "PausAR Dashboard"
+
+#: admin/menu/adminMenu.php:178
+msgid "Get to know PausAR"
+msgstr "Lernen Sie PausAR kennen"
+
+#: admin/menu/adminMenu.php:182
+msgid "Not sure where to start?"
+msgstr "Sie wissen nicht, wo Sie anfangen sollen?"
+
+#: admin/menu/adminMenu.php:183
+msgid ""
+"If you are not yet familiar with PausAR and the creation of web-based AR "
+"content, you can take a look at our guide for beginners."
+msgstr ""
+"Wenn Sie noch nicht mit PausAR und der Erstellung von webbasierten AR-"
+"Inhalten vertraut sind, können Sie einen Blick auf unseren Leitfaden für "
+"Einsteiger werfen."
+
+#: admin/menu/adminMenu.php:184
+msgid ""
+"You can also view and read important basic knowledge about PausAR, the most "
+"important basic settings and the required 3D models in our documentation."
+msgstr ""
+"Wichtiges Basiswissen über PausAR, die wichtigsten Grundeinstellungen und "
+"die benötigten 3D-Modelle können Sie auch in unserer Dokumentation einsehen "
+"und nachlesen."
+
+#: admin/menu/adminMenu.php:187
+msgid "View Documentation"
+msgstr "Dokumentation anschauen"
+
+#: admin/menu/adminMenu.php:207
+msgid "Upgrade to Premium?"
+msgstr "Auf Premium upgraden?"
+
+#: admin/menu/adminMenu.php:209
+msgid ""
+"Would you like more features and styling options for your AR scenes? Then "
+"check out our Pro features and update to one of our premium versions of "
+"PausAR."
+msgstr ""
+"Wünschen Sie sich mehr Funktionen und Gestaltungsmöglichkeiten für Ihre AR-"
+"Szenen? Dann schauen Sie sich unsere Pro-Funktionen an und aktualisieren Sie "
+"auf eine unserer Premium-Versionen von PausAR."
+
+#: admin/menu/adminMenu.php:210
+msgid "Explore PausAR Premium"
+msgstr "PausAR Premium entdecken"
+
+#: admin/menu/adminMenu.php:224
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: admin/menu/adminMenu.php:259
+msgid "Thank you for installing PausAR."
+msgstr "Danke, dass Sie PausAR installiert haben."
+
+#: admin/menu/adminMenu.php:260
+msgid "Create your own web-based AR scene in just a few steps."
+msgstr ""
+"Erstellen Sie Ihre eigene webbasierte AR-Szene in nur wenigen Schritten."
+
+#: admin/menu/adminMenu.php:273
+msgid "Introduction"
+msgstr "Einleitung"
+
+#: admin/menu/adminMenu.php:277
+msgid "Explanation: What is PausAR?"
+msgstr "Erläuterung: Was ist PausAR?"
+
+#: admin/menu/adminMenu.php:278
+msgid ""
+"PausAR enables the display of AR and 3D content directly in the web browser "
+"and on your websites."
+msgstr ""
+"PausAR ermöglicht die Darstellung von AR- und 3D-Inhalten direkt im "
+"Webbrowser und auf Ihren Websites."
+
+#: admin/menu/adminMenu.php:279
+msgid ""
+"AR scenes can be created in just a few steps and hosted directly on your "
+"WordPress site, without the need for iframes and external servers."
+msgstr ""
+"AR-Szenen können in nur wenigen Schritten erstellt und direkt auf Ihrer "
+"WordPress-Website gehostet werden, ohne dass Iframes und externe Server "
+"erforderlich sind."
+
+#: admin/menu/adminMenu.php:280
+msgid ""
+"Our goal is to simplify the creation of AR applications and content in order "
+"to make them accessible to a wide range of users."
+msgstr ""
+"Unser Ziel ist es, die Erstellung von AR-Anwendungen und -Inhalten zu "
+"vereinfachen, um sie einer breiten Masse von Nutzern zugänglich zu machen."
+
+#: admin/menu/adminMenu.php:300
+msgid "Create a Scene"
+msgstr "Szene erstellen"
+
+#: admin/menu/adminMenu.php:304
+msgid "Creating a scene in Elementor"
+msgstr "Eine Szene in Elementor erstellen"
+
+#: admin/menu/adminMenu.php:305
+msgid ""
+"Creating a new AR scene can be done directly in the Elementor editor. PausAR "
+"adds a new category and widgets to the Elementor website builder. No "
+"settings in the WordPress admin menu are necessary."
+msgstr ""
+"Das Erstellen einer neuen AR-Szene kann direkt im Elementor-Editor erfolgen. "
+"PausAR fügt eine neue Kategorie und Widgets zum Elementor Website-Builder "
+"hinzu. Es sind keine Einstellungen im WordPress-Adminmenü notwendig."
+
+#: admin/menu/adminMenu.php:306
+msgid ""
+"A new AR scene can be added to your own website by editing the page with "
+"Elementor and creating a new instance of the PausAR Viewer widget. The "
+"widget is simply dragged onto the website."
+msgstr ""
+"Eine neue AR-Szene kann zur eigenen Website hinzugefügt werden, indem man "
+"die Seite mit Elementor bearbeitet und eine neue Instanz des PausAR Viewer "
+"Widgets erstellt. Das Widget wird einfach auf die Website gezogen."
+
+#: admin/menu/adminMenu.php:307
+msgid ""
+"Each PausAR widget contains an AR scene and a 3D preview, which can be "
+"further customized in terms of content, appearance and functionality."
+msgstr ""
+"Jedes PausAR-Widget enthält eine AR-Szene und eine 3D-Vorschau, die in Bezug "
+"auf Inhalt, Aussehen und Funktionalität weiter angepasst werden können."
+
+#: admin/menu/adminMenu.php:317
+msgid "Required Files"
+msgstr "Benötigte Dateien"
+
+#: admin/menu/adminMenu.php:321
+msgid "Basic settings of a scene"
+msgstr "Grundeinstellungen einer Szene"
+
+#: admin/menu/adminMenu.php:322
+msgid ""
+"Although PausAR offers many setting and customization options, only the 3D "
+"models are required as mandatory files to start the AR scene."
+msgstr ""
+"Obwohl PausAR viele Einstellungs- und Anpassungsmöglichkeiten bietet, werden "
+"nur die 3D-Modelle als Pflichtdateien benötigt, um die AR-Szene zu starten."
+
+#: admin/menu/adminMenu.php:323
+msgid ""
+"Each AR scene always requires two separate files with identical content, "
+"even though only one 3D model can be displayed. The reason for this is "
+"technical differences and the specific file formats for 3D content used by "
+"Android and iOS/iPadOS."
+msgstr ""
+"Jede AR-Szene erfordert immer zwei separate Dateien mit identischem Inhalt, "
+"obwohl nur ein 3D-Modell angezeigt werden kann. Der Grund dafür sind "
+"technische Unterschiede und die spezifischen Dateiformate für 3D-Inhalte, "
+"die von Android und iOS/iPadOS verwendet werden."
+
+#. translators: 1: Link with open tag, 2: Link close tag.
+#: admin/menu/adminMenu.php:328
+msgid ""
+"All required files for each scene should always be included so that all "
+"potential users can view the scene. The file formats used and their creation "
+"are described in more detail in the %1$s documentation%2$s."
+msgstr ""
+"Es sollten immer alle erforderlichen Dateien für jede Szene enthalten sein, "
+"damit alle potentiellen Benutzer die Szene betrachten können. Die "
+"verwendeten Dateiformate und deren Erstellung sind in der %1$s-"
+"Dokumentation%2$s näher beschrieben."
+
+#: admin/menu/adminMenu.php:343
+msgid "Additional Settings"
+msgstr "Zusätzliche Einstellungen"
+
+#: admin/menu/adminMenu.php:348
+msgid "Individualization and styling"
+msgstr "Individualisierung und Styling"
+
+#: admin/menu/adminMenu.php:349
+msgid ""
+"In addition to the required 3D models, which should always be specified, "
+"there are other customization options that help to adapt each AR scene "
+"individually to your own website."
+msgstr ""
+"Neben den benötigten 3D-Modellen, die immer angegeben werden sollten, gibt "
+"es weitere Anpassungsmöglichkeiten, die helfen, jede AR-Szene individuell an "
+"die eigene Website anzupassen."
+
+#: admin/menu/adminMenu.php:350
+msgid ""
+"Since these settings are optional, you can simply experiment a little and "
+"customize the plugin specifically. These settings include visual adjustments "
+"to the start button and the preview, but also technical and content "
+"adjustments to the AR scene itself."
+msgstr ""
+"Da diese Einstellungen optional sind, können Sie einfach ein wenig "
+"experimentieren und das Plugin gezielt anpassen. Zu diesen Einstellungen "
+"gehören optische Anpassungen des Startbuttons und der Vorschau, aber auch "
+"technische und inhaltliche Anpassungen der AR-Szene selbst."
+
+#: admin/menu/adminMenu.php:352
+msgid ""
+"It is worth mentioning that the free version of PausAR does not contain the "
+"same range of optional customization functions as the paid versions."
+msgstr ""
+"Erwähnenswert ist, dass die kostenlose Version von PausAR nicht den gleichen "
+"Umfang an optionalen Individualisierungsfunktionen bietet wie die "
+"kostenpflichtigen Versionen."
+
+#: admin/menu/adminMenu.php:363
+msgid "Experience AR"
+msgstr "Erlebe AR"
+
+#: admin/menu/adminMenu.php:367
+msgid "Try it out"
+msgstr "Probiere es aus"
+
+#: admin/menu/adminMenu.php:368
+msgid ""
+"It does not take much to integrate a simple AR scene into your own website. "
+"Even without prior knowledge, you can create your own web-based AR presence "
+"in just a few steps, as long as you have the necessary 3D models."
+msgstr ""
+"Es braucht nicht viel, um eine einfache AR-Szene in Ihre eigene Website zu "
+"integrieren. Auch ohne Vorkenntnisse können Sie in wenigen Schritten Ihren "
+"eigenen webbasierten AR-Auftritt erstellen, sofern Sie über die notwendigen "
+"3D-Modelle verfügen."
+
+#: admin/menu/adminMenu.php:369
+msgid ""
+"If everything has been configured correctly, users can now start the AR "
+"scenes directly via their web browsers using their AR-capable devices (e.g. "
+"smartphones). If a device is not supported, users will be informed of this "
+"by a pop-up window and an attempt will be made to redirect the user to a "
+"capable AR device."
+msgstr ""
+"Wenn alles richtig konfiguriert wurde, können Nutzer nun die AR-Szenen "
+"direkt über ihren Webbrowser mit ihren AR-fähigen Geräten (z.B. Smartphones) "
+"starten. Sollte ein Gerät nicht unterstützt werden, wird der Nutzer durch "
+"ein Popup-Fenster darauf hingewiesen und es wird versucht, den Nutzer auf "
+"ein fähiges AR-Gerät umzuleiten."
+
+#: admin/menu/adminMenu.php:383
+msgid "Ready to go"
+msgstr "Bereit zum Loslegen"
+
+#: admin/menu/adminMenu.php:384
+msgid ""
+"You should now have a sufficient understanding of how PausAR works and be "
+"able to create customized AR scenes."
+msgstr ""
+"Sie sollten jetzt ein ausreichendes Verständnis für die Funktionsweise von "
+"PausAR haben und in der Lage sein, benutzerdefinierte AR-Szenen zu erstellen."
+
+#. translators: 1: Documentation link with open tag,, 2: Support link with open tag, 3: Support mailto link with open tag, 4: Link close tag.
+#: admin/menu/adminMenu.php:389
+msgid ""
+"If you want to learn even more about PausAR and its features, check out our "
+"%1$s documentation%4$s. If you have any problems, feel free to visit the "
+"%2$s support forum%4$s or write to us directly via our %3$s support%4$s "
+"email."
+msgstr ""
+"Wenn Sie noch mehr über PausAR und seine Funktionen erfahren möchten, "
+"schauen Sie sich unsere %1$s Dokumentation%4$s an. Wenn Sie Probleme haben, "
+"besuchen Sie das %2$s Support-Forum%4$s oder schreiben Sie uns direkt über "
+"unsere %3$s Support%4$s E-Mail."
+
+#. translators: 1: Website link with open tag,, 2: Link close tag.
+#: admin/menu/adminMenu.php:402
+msgid ""
+"If you would like to learn more about the features of our paid versions, "
+"please visit our %1$s website%2$s."
+msgstr ""
+"Wenn Sie mehr über die Funktionen unserer kostenpflichtigen Versionen "
+"erfahren möchten, besuchen Sie bitte unsere %1$s Website%2$s."
+
+#: admin/menu/adminMenu.php:410
+msgid "Continue to Dashboard"
+msgstr "Weiter zum Dashboard"
+
+#: admin/menu/adminMenu.php:601
+msgid "Back"
+msgstr "Zurück"
+
+#: admin/menu/adminMenu.php:609
+msgid "Finish"
+msgstr "Abschließen"
+
+#: admin/menu/adminMenu.php:611
+msgid "Next"
+msgstr "Weiter"
+
+#. translators: 1: Plugin name 2: Elementor
+#: elementor/pausar-elementor-plugin.php:61 pausar-version.php:143
+msgid "%1$s requires %2$s to be installed and activated."
+msgstr "Für %1$s muss %2$s installiert und aktiviert sein."
+
+#: elementor/pausar-elementor-plugin.php:63 pausar-version.php:145
+#: pausar-version.php:167
+msgid "Elementor"
+msgstr "Elementor"
+
+#: elementor/pausar_viewer_default/widget-default.php:36
+msgid "PausAR Viewer"
+msgstr "PausAR Viewer"
+
+#: elementor/pausar_viewer_default/widget-default.php:104
+msgid "Basic Settings"
+msgstr "Grundeinstellungen"
+
+#: elementor/pausar_viewer_default/widget-default.php:112
+msgid "Button Text"
+msgstr "Button Text"
+
+#: elementor/pausar_viewer_default/widget-default.php:114
+msgid "Start AR"
+msgstr "Starte AR"
+
+#: elementor/pausar_viewer_default/widget-default.php:127
+#: elementor/pausar_viewer_default/widget-default.php:213
+#: elementor/pausar_viewer_default/widget-default.php:300
+msgid "Icon"
+msgstr "Icon"
+
+#: elementor/pausar_viewer_default/widget-default.php:142
+#: elementor/pausar_viewer_default/widget-default.php:229
+#: elementor/pausar_viewer_default/widget-default.php:316
+msgid "Icon Position"
+msgstr "Icon Position"
+
+#: elementor/pausar_viewer_default/widget-default.php:146
+#: elementor/pausar_viewer_default/widget-default.php:233
+#: elementor/pausar_viewer_default/widget-default.php:320
+msgid "Start"
+msgstr "Anfang"
+
+#: elementor/pausar_viewer_default/widget-default.php:150
+#: elementor/pausar_viewer_default/widget-default.php:237
+#: elementor/pausar_viewer_default/widget-default.php:324
+msgid "End"
+msgstr "Ende"
+
+#: elementor/pausar_viewer_default/widget-default.php:172
+#: elementor/pausar_viewer_default/widget-default.php:259
+#: elementor/pausar_viewer_default/widget-default.php:346
+#: elementor/pausar_viewer_default/widget-default.php:3618
+#: elementor/pausar_viewer_default/widget-default.php:4419
+#: elementor/pausar_viewer_default/widget-default.php:4553
+msgid "Margin"
+msgstr "Außenabstand"
+
+#: elementor/pausar_viewer_default/widget-default.php:390
+#: elementor/pausar_viewer_default/widget-default.php:3362
+msgid "Alignment"
+msgstr "Ausrichtung"
+
+#: elementor/pausar_viewer_default/widget-default.php:394
+#: elementor/pausar_viewer_default/widget-default.php:3366
+msgid "Left"
+msgstr "Links"
+
+#: elementor/pausar_viewer_default/widget-default.php:398
+#: elementor/pausar_viewer_default/widget-default.php:3370
+msgid "Center"
+msgstr "Zentriert"
+
+#: elementor/pausar_viewer_default/widget-default.php:402
+#: elementor/pausar_viewer_default/widget-default.php:3374
+msgid "Right"
+msgstr "Rechts"
+
+#: elementor/pausar_viewer_default/widget-default.php:406
+msgid "Justified"
+msgstr "Ausgerichtet"
+
+#: elementor/pausar_viewer_default/widget-default.php:424
+msgid "AR Scene"
+msgstr "AR Szene"
+
+#: elementor/pausar_viewer_default/widget-default.php:440
+#: elementor/pausar_viewer_default/widget-default.php:484
+#: elementor/pausar_viewer_default/widget-default.php:528
+msgid "Configuration of the AR scene not yet complete"
+msgstr "Konfiguration der AR-Szene noch nicht abgeschlossen"
+
+#: elementor/pausar_viewer_default/widget-default.php:444
+#: elementor/pausar_viewer_default/widget-default.php:488
+#: elementor/pausar_viewer_default/widget-default.php:532
+msgid "The following 3D content is missing:"
+msgstr "Folgende 3D-Inhalte fehlen:"
+
+#: elementor/pausar_viewer_default/widget-default.php:446
+#: elementor/pausar_viewer_default/widget-default.php:490
+#: elementor/pausar_viewer_default/widget-default.php:534
+#: elementor/pausar_viewer_default/widget-default.php:600
+msgid "3D Model (Android and Preview)"
+msgstr "3D Modell (Android und Vorschau)"
+
+#: elementor/pausar_viewer_default/widget-default.php:447
+#: elementor/pausar_viewer_default/widget-default.php:491
+#: elementor/pausar_viewer_default/widget-default.php:535
+#: elementor/pausar_viewer_default/widget-default.php:613
+#: elementor/pausar_viewer_default/widget-default.php:629
+#: elementor/pausar_viewer_default/widget-default.php:646
+msgid "3D Model (iOS)"
+msgstr "3D Modell (iOS)"
+
+#: elementor/pausar_viewer_default/widget-default.php:449
+#: elementor/pausar_viewer_default/widget-default.php:493
+#: elementor/pausar_viewer_default/widget-default.php:537
+msgid ""
+"Android or iOS users cannot view the AR scene if the corresponding files are "
+"missing."
+msgstr ""
+"Android- oder iOS-Nutzer können die AR-Szene nicht starten, wenn die "
+"entsprechenden Dateien fehlen."
+
+#. translators: 1: Link open tag, 2: Link close tag.
+#: elementor/pausar_viewer_default/widget-default.php:452
+#: elementor/pausar_viewer_default/widget-default.php:496
+msgid ""
+"Use our free %1$s online converter %2$s to easily convert your GLTF models "
+"(*.glb) for iOS."
+msgstr ""
+"Verwenden Sie unseren kostenlosen %1$s Online-Konverter %2$s, um Ihre GLTF-"
+"Modelle (*.glb) für iOS zu konvertieren."
+
+#: elementor/pausar_viewer_default/widget-default.php:568
+msgid "The required AR scene content has been specified"
+msgstr "Die erforderlichen AR-Inhalte wurden angegeben"
+
+#: elementor/pausar_viewer_default/widget-default.php:572
+msgid ""
+"All required 3D content has been added. Android and iOS users can now both "
+"launch the AR scene."
+msgstr ""
+"Alle erforderlichen 3D-Inhalte wurden hinzugefügt. Sowohl Android- als auch "
+"iOS-Benutzer können jetzt die AR-Szene starten."
+
+#: elementor/pausar_viewer_default/widget-default.php:604
+msgid "Filetype: .glb"
+msgstr "Dateityp: .glb"
+
+#. translators: 1: Link open tag, 3: Link close tag.
+#: elementor/pausar_viewer_default/widget-default.php:619
+#: elementor/pausar_viewer_default/widget-default.php:635
+#: elementor/pausar_viewer_default/widget-default.php:652
+msgid ""
+"Filetype(s): .usdz, .reality | Try out our free %1$s USDZ Converter %2$s."
+msgstr ""
+"Dateitypen: .usdz, .reality | Probieren Sie unseren kostenlosen %1$s USDZ-"
+"Konverter %2$s aus."
+
+#: elementor/pausar_viewer_default/widget-default.php:667
+#: elementor/pausar_viewer_default/widget-default.php:684
+#: elementor/pausar_viewer_default/widget-default.php:703
+msgid "Sound"
+msgstr "Ton"
+
+#. translators: 1: quotation mark, 2: Link open tag, 3: Link close tag.
+#: elementor/pausar_viewer_default/widget-default.php:673
+#: elementor/pausar_viewer_default/widget-default.php:690
+#: elementor/pausar_viewer_default/widget-default.php:709
+msgid ""
+"Filetype(s): .wav, .mp3 | Only applied to scenes with .glb files. For Apple "
+"devices, sound files are embedded directly into the model via %1$s reality "
+"composer %1$s. %2$s Learn more %3$s"
+msgstr ""
+"Dateitypen: .wav, .mp3 | Wird nur bei Szenen mit .glb Dateien verwendet. Bei "
+"Apple Geräten werden Sounddateien direkt über den %1$s Reality Composer %1$s "
+"in das Model eingebettet. %2$s Mehr erfahren %3$s"
+
+#: elementor/pausar_viewer_default/widget-default.php:726
+#: elementor/pausar_viewer_default/widget-default.php:1020
+#: elementor/pausar_viewer_default/widget-default.php:1048
+msgid "Enable Scene UI"
+msgstr "Szenen UI aktivieren"
+
+#: elementor/pausar_viewer_default/widget-default.php:728
+#: elementor/pausar_viewer_default/widget-default.php:1009
+#: elementor/pausar_viewer_default/widget-default.php:1022
+#: elementor/pausar_viewer_default/widget-default.php:1035
+#: elementor/pausar_viewer_default/widget-default.php:1050
+#: elementor/pausar_viewer_default/widget-default.php:1063
+#: elementor/pausar_viewer_default/widget-default.php:1078
+#: elementor/pausar_viewer_default/widget-default.php:1091
+#: elementor/pausar_viewer_default/widget-default.php:1124
+#: elementor/pausar_viewer_default/widget-default.php:1187
+#: elementor/pausar_viewer_default/widget-default.php:1247
+#: elementor/pausar_viewer_default/widget-default.php:1311
+#: elementor/pausar_viewer_default/widget-default.php:1365
+#: elementor/pausar_viewer_default/widget-default.php:1675
+#: elementor/pausar_viewer_default/widget-default.php:1772
+#: elementor/pausar_viewer_default/widget-default.php:1804
+#: elementor/pausar_viewer_default/widget-default.php:1842
+#: elementor/pausar_viewer_default/widget-default.php:1879
+#: elementor/pausar_viewer_default/widget-default.php:1916
+#: elementor/pausar_viewer_default/widget-default.php:1993
+#: elementor/pausar_viewer_default/widget-default.php:2109
+#: elementor/pausar_viewer_default/widget-default.php:2183
+#: elementor/pausar_viewer_default/widget-default.php:2209
+#: elementor/pausar_viewer_default/widget-default.php:2394
+#: elementor/pausar_viewer_default/widget-default.php:2428
+#: elementor/pausar_viewer_default/widget-default.php:2450
+#: elementor/pausar_viewer_default/widget-default.php:2488
+#: elementor/pausar_viewer_default/widget-default.php:2525
+#: elementor/pausar_viewer_default/widget-default.php:2562
+#: elementor/pausar_viewer_default/widget-default.php:2619
+#: elementor/pausar_viewer_default/widget-default.php:2704
+#: elementor/pausar_viewer_default/widget-default.php:2758
+#: elementor/pausar_viewer_default/widget-default.php:2784
+#: elementor/pausar_viewer_default/widget-default.php:2969
+#: elementor/pausar_viewer_default/widget-default.php:3003
+#: elementor/pausar_viewer_default/widget-default.php:3025
+#: elementor/pausar_viewer_default/widget-default.php:3063
+#: elementor/pausar_viewer_default/widget-default.php:3100
+#: elementor/pausar_viewer_default/widget-default.php:3137
+#: elementor/pausar_viewer_default/widget-default.php:3194
+#: elementor/pausar_viewer_default/widget-default.php:3279
+#: elementor/pausar_viewer_default/widget-default.php:3911
+#: elementor/pausar_viewer_default/widget-default.php:3973
+#: elementor/pausar_viewer_default/widget-default.php:4198
+#: elementor/pausar_viewer_default/widget-default.php:4337
+#: elementor/pausar_viewer_default/widget-default.php:4503
+#: elementor/pausar_viewer_default/widget-default.php:4519
+#: elementor/pausar_viewer_default/widget-default.php:4637
+#: elementor/pausar_viewer_default/widget-default.php:4652
+#: elementor/pausar_viewer_default/widget-default.php:4790
+#: elementor/pausar_viewer_default/widget-default.php:4929
+#: elementor/pausar_viewer_default/widget-default.php:4943
+#: elementor/pausar_viewer_default/widget-default.php:4961
+#: elementor/pausar_viewer_default/widget-default.php:4973
+#: elementor/pausar_viewer_default/widget-default.php:4987
+#: elementor/pausar_viewer_default/widget-default.php:5005
+#: elementor/pausar_viewer_default/widget-default.php:5039
+#: elementor/pausar_viewer_default/widget-default.php:5059
+msgid "On"
+msgstr "An"
+
+#: elementor/pausar_viewer_default/widget-default.php:729
+#: elementor/pausar_viewer_default/widget-default.php:1010
+#: elementor/pausar_viewer_default/widget-default.php:1023
+#: elementor/pausar_viewer_default/widget-default.php:1036
+#: elementor/pausar_viewer_default/widget-default.php:1051
+#: elementor/pausar_viewer_default/widget-default.php:1064
+#: elementor/pausar_viewer_default/widget-default.php:1079
+#: elementor/pausar_viewer_default/widget-default.php:1092
+#: elementor/pausar_viewer_default/widget-default.php:1125
+#: elementor/pausar_viewer_default/widget-default.php:1188
+#: elementor/pausar_viewer_default/widget-default.php:1248
+#: elementor/pausar_viewer_default/widget-default.php:1312
+#: elementor/pausar_viewer_default/widget-default.php:1339
+#: elementor/pausar_viewer_default/widget-default.php:1366
+#: elementor/pausar_viewer_default/widget-default.php:1676
+#: elementor/pausar_viewer_default/widget-default.php:1773
+#: elementor/pausar_viewer_default/widget-default.php:1805
+#: elementor/pausar_viewer_default/widget-default.php:1843
+#: elementor/pausar_viewer_default/widget-default.php:1880
+#: elementor/pausar_viewer_default/widget-default.php:1917
+#: elementor/pausar_viewer_default/widget-default.php:1994
+#: elementor/pausar_viewer_default/widget-default.php:2110
+#: elementor/pausar_viewer_default/widget-default.php:2184
+#: elementor/pausar_viewer_default/widget-default.php:2197
+#: elementor/pausar_viewer_default/widget-default.php:2210
+#: elementor/pausar_viewer_default/widget-default.php:2395
+#: elementor/pausar_viewer_default/widget-default.php:2429
+#: elementor/pausar_viewer_default/widget-default.php:2451
+#: elementor/pausar_viewer_default/widget-default.php:2489
+#: elementor/pausar_viewer_default/widget-default.php:2526
+#: elementor/pausar_viewer_default/widget-default.php:2563
+#: elementor/pausar_viewer_default/widget-default.php:2620
+#: elementor/pausar_viewer_default/widget-default.php:2705
+#: elementor/pausar_viewer_default/widget-default.php:2759
+#: elementor/pausar_viewer_default/widget-default.php:2772
+#: elementor/pausar_viewer_default/widget-default.php:2785
+#: elementor/pausar_viewer_default/widget-default.php:2970
+#: elementor/pausar_viewer_default/widget-default.php:3004
+#: elementor/pausar_viewer_default/widget-default.php:3026
+#: elementor/pausar_viewer_default/widget-default.php:3064
+#: elementor/pausar_viewer_default/widget-default.php:3101
+#: elementor/pausar_viewer_default/widget-default.php:3138
+#: elementor/pausar_viewer_default/widget-default.php:3195
+#: elementor/pausar_viewer_default/widget-default.php:3280
+#: elementor/pausar_viewer_default/widget-default.php:3912
+#: elementor/pausar_viewer_default/widget-default.php:3974
+#: elementor/pausar_viewer_default/widget-default.php:4199
+#: elementor/pausar_viewer_default/widget-default.php:4338
+#: elementor/pausar_viewer_default/widget-default.php:4504
+#: elementor/pausar_viewer_default/widget-default.php:4520
+#: elementor/pausar_viewer_default/widget-default.php:4638
+#: elementor/pausar_viewer_default/widget-default.php:4653
+#: elementor/pausar_viewer_default/widget-default.php:4791
+#: elementor/pausar_viewer_default/widget-default.php:4930
+#: elementor/pausar_viewer_default/widget-default.php:4944
+#: elementor/pausar_viewer_default/widget-default.php:4962
+#: elementor/pausar_viewer_default/widget-default.php:4974
+#: elementor/pausar_viewer_default/widget-default.php:4988
+#: elementor/pausar_viewer_default/widget-default.php:5006
+#: elementor/pausar_viewer_default/widget-default.php:5040
+#: elementor/pausar_viewer_default/widget-default.php:5060
+msgid "Off"
+msgstr "Aus"
+
+#: elementor/pausar_viewer_default/widget-default.php:745
+msgid "Configuration of the user interface is not yet complete"
+msgstr "Die Konfiguration der Benutzeroberfläche ist noch nicht abgeschlossen"
+
+#: elementor/pausar_viewer_default/widget-default.php:749
+msgid ""
+"Not all required text fields for the scene UI were filled in. If information "
+"is missing, the user interface cannot be displayed correctly."
+msgstr ""
+"Es wurden nicht alle erforderlichen Textfelder für die Szenen-UI ausgefüllt. "
+"Wenn Informationen fehlen, kann die Benutzeroberfläche nicht korrekt "
+"angezeigt werden."
+
+#: elementor/pausar_viewer_default/widget-default.php:871
+msgid "The user interface is fully configured"
+msgstr "Die Benutzeroberfläche ist vollständig konfiguriert"
+
+#: elementor/pausar_viewer_default/widget-default.php:875
+msgid ""
+"All required text fields have been filled in. Android and iOS devices can "
+"now display the scene UI during the AR session."
+msgstr ""
+"Alle erforderlichen Textfelder wurden ausgefüllt. Android- und iOS-Geräte "
+"können jetzt die Benutzeroberfläche innerhalb der AR-Szene anzeigen."
+
+#: elementor/pausar_viewer_default/widget-default.php:934
+msgid "Title"
+msgstr "Titel"
+
+#: elementor/pausar_viewer_default/widget-default.php:948
+msgid "Link"
+msgstr "Link"
+
+#: elementor/pausar_viewer_default/widget-default.php:953
+msgid "Add a valid URL to which the call-to-action directs."
+msgstr "Fügen Sie eine gültige URL hinzu, auf die der Call-to-Action verweist."
+
+#: elementor/pausar_viewer_default/widget-default.php:963
+msgid "* Description"
+msgstr "* Beschreibung"
+
+#: elementor/pausar_viewer_default/widget-default.php:977
+msgid "* Call to Action"
+msgstr "* Call to Action"
+
+#: elementor/pausar_viewer_default/widget-default.php:981
+msgid "The label of the call-to-action link"
+msgstr "Die Beschriftung des Call-to-Action-Links"
+
+#: elementor/pausar_viewer_default/widget-default.php:991
+msgid "Important Note"
+msgstr "Wichtiger Hinweis"
+
+#: elementor/pausar_viewer_default/widget-default.php:993
+msgid ""
+"Input fields marked with (*) are only displayed on iOS devices, but are "
+"still required as mandatory fields."
+msgstr ""
+"Mit (*) gekennzeichnete Eingabefelder werden nur auf iOS-Geräten angezeigt, "
+"sind aber dennoch als Pflichtfelder erforderlich."
+
+#: elementor/pausar_viewer_default/widget-default.php:1007
+#: elementor/pausar_viewer_default/widget-default.php:1033
+#: elementor/pausar_viewer_default/widget-default.php:1061
+msgid "Disable Scaling"
+msgstr "Skalierung deaktivieren"
+
+#: elementor/pausar_viewer_default/widget-default.php:1076
+msgid "Object Blending"
+msgstr "Object Blending"
+
+#: elementor/pausar_viewer_default/widget-default.php:1082
+msgid "Only applied to scenes with .glb files"
+msgstr "Nur sichtbar bei Szenen mit .glb Dateien"
+
+#: elementor/pausar_viewer_default/widget-default.php:1089
+msgid "Vertical Surface Placement"
+msgstr "Vertikale Platzierung"
+
+#. translators: 1: Link open tag, 2: Link close tag.
+#: elementor/pausar_viewer_default/widget-default.php:1097
+msgid ""
+"Only applied to scenes with .glb files. Apple devices automatically switch "
+"placement methods when a model is dragged onto a wall or floor. %1$s Learn "
+"more %2$s"
+msgstr ""
+"Wird nur bei Szenen mit .glb Dateien angewendet. Apple Geräte wechseln "
+"automatisch die Platzierungs-Methode, wenn ein Modell auf eine Wand oder den "
+"Boden gezogen wird. %1$s Mehr erfahren %2$s"
+
+#: elementor/pausar_viewer_default/widget-default.php:1112
+#: elementor/pausar_viewer_default/widget-default.php:3598
+#: elementor/pausar_viewer_default/widget-default.php:4409
+#: elementor/pausar_viewer_default/widget-default.php:4543
+msgid "Scene Preview"
+msgstr "Vorschau"
+
+#: elementor/pausar_viewer_default/widget-default.php:1122
+#: elementor/pausar_viewer_default/widget-default.php:1185
+#: elementor/pausar_viewer_default/widget-default.php:1245
+msgid "Disable Preview"
+msgstr "Vorschau deaktivieren"
+
+#: elementor/pausar_viewer_default/widget-default.php:1128
+#: elementor/pausar_viewer_default/widget-default.php:1191
+#: elementor/pausar_viewer_default/widget-default.php:1251
+msgid ""
+"Disable the rendering of the 2D/3D preview of the AR scene on the webpage."
+msgstr ""
+"Schaltet die Darstellung der 2D/3D Vorschau der AR Szene auf der Webseite "
+"aus."
+
+#: elementor/pausar_viewer_default/widget-default.php:1137
+#: elementor/pausar_viewer_default/widget-default.php:1201
+#: elementor/pausar_viewer_default/widget-default.php:1261
+msgid "Button Position"
+msgstr "Button Position"
+
+#: elementor/pausar_viewer_default/widget-default.php:1141
+#: elementor/pausar_viewer_default/widget-default.php:1205
+#: elementor/pausar_viewer_default/widget-default.php:1265
+msgid "Top"
+msgstr "Oben"
+
+#: elementor/pausar_viewer_default/widget-default.php:1145
+#: elementor/pausar_viewer_default/widget-default.php:1209
+#: elementor/pausar_viewer_default/widget-default.php:1269
+msgid "Bottom"
+msgstr "Unten"
+
+#: elementor/pausar_viewer_default/widget-default.php:1161
+#: elementor/pausar_viewer_default/widget-default.php:1222
+#: elementor/pausar_viewer_default/widget-default.php:1282
+msgid "Preview Mode"
+msgstr "Vorschau Modus"
+
+#: elementor/pausar_viewer_default/widget-default.php:1165
+#: elementor/pausar_viewer_default/widget-default.php:1226
+#: elementor/pausar_viewer_default/widget-default.php:1286
+msgid "3D"
+msgstr "3D"
+
+#: elementor/pausar_viewer_default/widget-default.php:1169
+#: elementor/pausar_viewer_default/widget-default.php:1230
+#: elementor/pausar_viewer_default/widget-default.php:1290
+msgid "2D"
+msgstr "2D"
+
+#: elementor/pausar_viewer_default/widget-default.php:1309
+#: elementor/pausar_viewer_default/widget-default.php:2181
+#: elementor/pausar_viewer_default/widget-default.php:2756
+msgid "Hide Button"
+msgstr "Button verstecken"
+
+#: elementor/pausar_viewer_default/widget-default.php:1336
+#: elementor/pausar_viewer_default/widget-default.php:2194
+#: elementor/pausar_viewer_default/widget-default.php:2769
+msgid "Play Animation"
+msgstr "Animation abspielen"
+
+#: elementor/pausar_viewer_default/widget-default.php:1338
+#: elementor/pausar_viewer_default/widget-default.php:2196
+#: elementor/pausar_viewer_default/widget-default.php:2771
+msgid "Loop"
+msgstr "An"
+
+#: elementor/pausar_viewer_default/widget-default.php:1363
+#: elementor/pausar_viewer_default/widget-default.php:2207
+#: elementor/pausar_viewer_default/widget-default.php:2782
+msgid "Allow fullscreen"
+msgstr "Vollbildmodus erlauben"
+
+#: elementor/pausar_viewer_default/widget-default.php:1369
+#: elementor/pausar_viewer_default/widget-default.php:2213
+#: elementor/pausar_viewer_default/widget-default.php:2788
+msgid "Not available when using iframe mode"
+msgstr "Nicht verfügbar im Iframe-Modus"
+
+#: elementor/pausar_viewer_default/widget-default.php:1396
+#: elementor/pausar_viewer_default/widget-default.php:2220
+#: elementor/pausar_viewer_default/widget-default.php:2795
+msgid "Loading Type"
+msgstr "Lademethode"
+
+#: elementor/pausar_viewer_default/widget-default.php:1400
+#: elementor/pausar_viewer_default/widget-default.php:2224
+#: elementor/pausar_viewer_default/widget-default.php:2799
+msgid "Lazy"
+msgstr "Lazy"
+
+#: elementor/pausar_viewer_default/widget-default.php:1401
+#: elementor/pausar_viewer_default/widget-default.php:2225
+#: elementor/pausar_viewer_default/widget-default.php:2800
+msgid "Eager"
+msgstr "Eager"
+
+#: elementor/pausar_viewer_default/widget-default.php:1424
+#: elementor/pausar_viewer_default/widget-default.php:2233
+#: elementor/pausar_viewer_default/widget-default.php:2808
+msgid "Poster"
+msgstr "Poster"
+
+#: elementor/pausar_viewer_default/widget-default.php:1453
+#: elementor/pausar_viewer_default/widget-default.php:2247
+#: elementor/pausar_viewer_default/widget-default.php:2822
+msgid "Generate Poster"
+msgstr "Erstelle Poster"
+
+#: elementor/pausar_viewer_default/widget-default.php:1458
+#: elementor/pausar_viewer_default/widget-default.php:2252
+#: elementor/pausar_viewer_default/widget-default.php:2827
+msgid "Generate"
+msgstr "Erstellen"
+
+#: elementor/pausar_viewer_default/widget-default.php:1475
+#: elementor/pausar_viewer_default/widget-default.php:2254
+#: elementor/pausar_viewer_default/widget-default.php:2829
+msgid "Generates an image of the current view, to use as the poster"
+msgstr ""
+"Generiert ein Bild der aktuellen 3D Vorschau, um es als Platzhaltergrafik zu "
+"verwenden"
+
+#: elementor/pausar_viewer_default/widget-default.php:1482
+#: elementor/pausar_viewer_default/widget-default.php:2261
+#: elementor/pausar_viewer_default/widget-default.php:2836
+msgid "Camera Orientation"
+msgstr "Kameraausrichtung"
+
+#: elementor/pausar_viewer_default/widget-default.php:1484
+#: elementor/pausar_viewer_default/widget-default.php:2263
+#: elementor/pausar_viewer_default/widget-default.php:2838
+msgid "Default"
+msgstr "Standard"
+
+#: elementor/pausar_viewer_default/widget-default.php:1485
+#: elementor/pausar_viewer_default/widget-default.php:2264
+#: elementor/pausar_viewer_default/widget-default.php:2839
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: elementor/pausar_viewer_default/widget-default.php:1512
+#: elementor/pausar_viewer_default/widget-default.php:2276
+#: elementor/pausar_viewer_default/widget-default.php:2851
+msgid "Theta (degree)"
+msgstr "Theta (Grad)"
+
+#: elementor/pausar_viewer_default/widget-default.php:1552
+#: elementor/pausar_viewer_default/widget-default.php:2306
+#: elementor/pausar_viewer_default/widget-default.php:2881
+msgid "Phi (degree)"
+msgstr "Phi (Grad)"
+
+#: elementor/pausar_viewer_default/widget-default.php:1592
+#: elementor/pausar_viewer_default/widget-default.php:2336
+#: elementor/pausar_viewer_default/widget-default.php:2911
+msgid "Radius"
+msgstr "Radius"
+
+#: elementor/pausar_viewer_default/widget-default.php:1633
+#: elementor/pausar_viewer_default/widget-default.php:2367
+#: elementor/pausar_viewer_default/widget-default.php:2942
+msgid "Camera Control"
+msgstr "Kamerasteuerung"
+
+#: elementor/pausar_viewer_default/widget-default.php:1637
+#: elementor/pausar_viewer_default/widget-default.php:2371
+#: elementor/pausar_viewer_default/widget-default.php:2946
+msgid "No Control"
+msgstr "Keine Steuerung"
+
+#: elementor/pausar_viewer_default/widget-default.php:1641
+#: elementor/pausar_viewer_default/widget-default.php:2375
+#: elementor/pausar_viewer_default/widget-default.php:2950
+msgid "Touch"
+msgstr "Maus/Touch"
+
+#: elementor/pausar_viewer_default/widget-default.php:1645
+#: elementor/pausar_viewer_default/widget-default.php:2379
+#: elementor/pausar_viewer_default/widget-default.php:2954
+msgid "Scroll"
+msgstr "Scrollen"
+
+#: elementor/pausar_viewer_default/widget-default.php:1673
+#: elementor/pausar_viewer_default/widget-default.php:2392
+#: elementor/pausar_viewer_default/widget-default.php:2967
+msgid "Cursor Swivel"
+msgstr "Cursorschwenk (Swivel)"
+
+#: elementor/pausar_viewer_default/widget-default.php:1709
+#: elementor/pausar_viewer_default/widget-default.php:1808
+#: elementor/pausar_viewer_default/widget-default.php:2133
+#: elementor/pausar_viewer_default/widget-default.php:2418
+#: elementor/pausar_viewer_default/widget-default.php:2454
+#: elementor/pausar_viewer_default/widget-default.php:2993
+#: elementor/pausar_viewer_default/widget-default.php:3029
+msgid "No preview in edit-mode"
+msgstr "Keine Vorschau im Bearbeitungsmodus"
+
+#: elementor/pausar_viewer_default/widget-default.php:1717
+msgid "Swivel Factor"
+msgstr "Schwenk-Empfindlichkeit"
+
+#: elementor/pausar_viewer_default/widget-default.php:1770
+#: elementor/pausar_viewer_default/widget-default.php:2426
+#: elementor/pausar_viewer_default/widget-default.php:3001
+msgid "Zoom"
+msgstr "Zoom"
+
+#: elementor/pausar_viewer_default/widget-default.php:1802
+#: elementor/pausar_viewer_default/widget-default.php:2448
+#: elementor/pausar_viewer_default/widget-default.php:3023
+msgid "Disable panning while scrolling"
+msgstr "Schwenken der Kamera beim Scrollen deaktivieren"
+
+#: elementor/pausar_viewer_default/widget-default.php:1840
+#: elementor/pausar_viewer_default/widget-default.php:2486
+#: elementor/pausar_viewer_default/widget-default.php:3061
+msgid "Disable side panning"
+msgstr "Seitliches Schwenken deaktivieren"
+
+#: elementor/pausar_viewer_default/widget-default.php:1877
+#: elementor/pausar_viewer_default/widget-default.php:2523
+#: elementor/pausar_viewer_default/widget-default.php:3098
+msgid "Disable camera reset"
+msgstr "Kamera-Reset deaktivieren"
+
+#: elementor/pausar_viewer_default/widget-default.php:1914
+#: elementor/pausar_viewer_default/widget-default.php:2560
+#: elementor/pausar_viewer_default/widget-default.php:3135
+msgid "Auto Rotation"
+msgstr "Automatische Rotation"
+
+#: elementor/pausar_viewer_default/widget-default.php:1946
+#: elementor/pausar_viewer_default/widget-default.php:2582
+#: elementor/pausar_viewer_default/widget-default.php:3157
+msgid "Rotation Delay"
+msgstr "Rotationsverzögerung"
+
+#: elementor/pausar_viewer_default/widget-default.php:1991
+#: elementor/pausar_viewer_default/widget-default.php:2617
+#: elementor/pausar_viewer_default/widget-default.php:3192
+msgid "Show Prompt"
+msgstr "Aufforderung anzeigen"
+
+#: elementor/pausar_viewer_default/widget-default.php:2023
+#: elementor/pausar_viewer_default/widget-default.php:2639
+#: elementor/pausar_viewer_default/widget-default.php:3214
+msgid "Prompt Type"
+msgstr "Aufforderungsart"
+
+#: elementor/pausar_viewer_default/widget-default.php:2027
+#: elementor/pausar_viewer_default/widget-default.php:2643
+#: elementor/pausar_viewer_default/widget-default.php:3218
+msgid "Basic"
+msgstr "Simpel"
+
+#: elementor/pausar_viewer_default/widget-default.php:2028
+#: elementor/pausar_viewer_default/widget-default.php:2644
+#: elementor/pausar_viewer_default/widget-default.php:3219
+msgid "Wiggle"
+msgstr "Wackeln"
+
+#: elementor/pausar_viewer_default/widget-default.php:2062
+#: elementor/pausar_viewer_default/widget-default.php:2667
+#: elementor/pausar_viewer_default/widget-default.php:3242
+msgid "Prompt Threshold"
+msgstr "Aufforderungsverzögerung"
+
+#: elementor/pausar_viewer_default/widget-default.php:2107
+#: elementor/pausar_viewer_default/widget-default.php:2702
+#: elementor/pausar_viewer_default/widget-default.php:3277
+msgid "Show dimensions"
+msgstr "Abmessungen anzeigen"
+
+#: elementor/pausar_viewer_default/widget-default.php:2140
+#: elementor/pausar_viewer_default/widget-default.php:2725
+#: elementor/pausar_viewer_default/widget-default.php:3300
+msgid "Rotation Sensitivity"
+msgstr "Rotationsempfindlichkeit"
+
+#: elementor/pausar_viewer_default/widget-default.php:3335
+msgid "Image"
+msgstr "Bild"
+
+#: elementor/pausar_viewer_default/widget-default.php:3411
+msgid "AR Button"
+msgstr "AR Button"
+
+#: elementor/pausar_viewer_default/widget-default.php:3421
+msgid "Typography"
+msgstr "Typografie"
+
+#: elementor/pausar_viewer_default/widget-default.php:3430
+msgid "Text Shadow"
+msgstr "Textschatten"
+
+#: elementor/pausar_viewer_default/widget-default.php:3440
+msgid "Normal"
+msgstr "Normal"
+
+#: elementor/pausar_viewer_default/widget-default.php:3447
+#: elementor/pausar_viewer_default/widget-default.php:3494
+msgid "Text Color"
+msgstr "Textfarbe"
+
+#: elementor/pausar_viewer_default/widget-default.php:3487
+msgid "Hover"
+msgstr "Hover"
+
+#: elementor/pausar_viewer_default/widget-default.php:3526
+msgid "Border Color"
+msgstr "Rahmenfarbe"
+
+#: elementor/pausar_viewer_default/widget-default.php:3538
+msgid "Hover Animation"
+msgstr "Animation bei Mausberührung"
+
+#: elementor/pausar_viewer_default/widget-default.php:3558
+#: elementor/pausar_viewer_default/widget-default.php:4395
+#: elementor/pausar_viewer_default/widget-default.php:4532
+#: elementor/pausar_viewer_default/widget-default.php:4665
+msgid "Border Radius"
+msgstr "Eckradius"
+
+#: elementor/pausar_viewer_default/widget-default.php:3572
+msgid "Box Shadow"
+msgstr "Schatten"
+
+#: elementor/pausar_viewer_default/widget-default.php:3579
+msgid "Padding"
+msgstr "Innenabstand"
+
+#: elementor/pausar_viewer_default/widget-default.php:3673
+#: elementor/pausar_viewer_default/widget-default.php:4461
+#: elementor/pausar_viewer_default/widget-default.php:4595
+msgid "Height"
+msgstr "Höhe"
+
+#: elementor/pausar_viewer_default/widget-default.php:3729
+msgid "Width"
+msgstr "Breite"
+
+#: elementor/pausar_viewer_default/widget-default.php:3783
+msgid "Max-Width"
+msgstr "Max. Höhe"
+
+#: elementor/pausar_viewer_default/widget-default.php:3838
+msgid "Dimension Line Color"
+msgstr "Linienfarbe der Abmessung"
+
+#: elementor/pausar_viewer_default/widget-default.php:3909
+#: elementor/pausar_viewer_default/widget-default.php:4501
+#: elementor/pausar_viewer_default/widget-default.php:4635
+msgid "Show Shadow"
+msgstr "Schatten anzeigen"
+
+#: elementor/pausar_viewer_default/widget-default.php:3933
+msgid "Shadow Intensity"
+msgstr "Schattenintensität"
+
+#: elementor/pausar_viewer_default/widget-default.php:3971
+#: elementor/pausar_viewer_default/widget-default.php:4517
+#: elementor/pausar_viewer_default/widget-default.php:4650
+msgid "Background"
+msgstr "Hintergrund"
+
+#: elementor/pausar_viewer_default/widget-default.php:3997
+msgid "Color"
+msgstr "Farbe"
+
+#: elementor/pausar_viewer_default/widget-default.php:4001
+#: elementor/pausar_viewer_default/widget-default.php:4071
+msgid "Skybox"
+msgstr "Skybox"
+
+#. translators: 1: Link with open tag, 2: Link close tag.
+#: elementor/pausar_viewer_default/widget-default.php:4100
+msgid ""
+"Filetype(s): .png, .jpg (Ultra HDR) | Convert .hdr files to .jpg (Ultra HDR) "
+"with %1$s this converter %2$s ."
+msgstr ""
+"Dateitypen: .png, .jpg (Ultra HDR) | Konvertieren Sie .hdr-Dateien mit %1$s "
+"diesem Konverter %2$s in .jpg (Ultra HDR)."
+
+#: elementor/pausar_viewer_default/widget-default.php:4112
+msgid "Pay attention to the resolution"
+msgstr "Achten Sie auf die Auflösung"
+
+#: elementor/pausar_viewer_default/widget-default.php:4113
+msgid ""
+"The image should not exceed a total size of 2048 x 1024 px, otherwise "
+"performance issues may occur on older mobile devices. Extreme image "
+"resolutions are not displayed on the live page to avoid crashes."
+msgstr ""
+"Das Bild sollte eine Gesamtgröße von 2048 x 1024 px nicht überschreiten, da "
+"es sonst auf älteren Mobilgeräten zu Performanceproblemen kommen kann. "
+"Extreme Bildauflösungen werden auf der Liveseite nicht angezeigt, um "
+"Abstürze zu vermeiden."
+
+#: elementor/pausar_viewer_default/widget-default.php:4140
+msgid "Skybox Height"
+msgstr "Skybox-Höhe"
+
+#: elementor/pausar_viewer_default/widget-default.php:4196
+msgid "Neutral exposure"
+msgstr "Neutrale Belichtung"
+
+#: elementor/pausar_viewer_default/widget-default.php:4234
+msgid "Exposure"
+msgstr "Belichtungsstärke"
+
+#: elementor/pausar_viewer_default/widget-default.php:4280
+msgid "Alpha Mask"
+msgstr "Alpha Maske"
+
+#: elementor/pausar_viewer_default/widget-default.php:4335
+msgid "Maintain mask aspect ratio"
+msgstr "Masken-Seitenverhältnis beibehalten"
+
+#: elementor/pausar_viewer_default/widget-default.php:4680
+msgid "Misc Settings"
+msgstr "Sonstiges"
+
+#: elementor/pausar_viewer_default/widget-default.php:4693
+#: elementor/pausar_viewer_default/widget-default.php:4756
+#: elementor/pausar_viewer_default/widget-default.php:4771
+msgid "Custom Anchor"
+msgstr "Benutzerdefinierter Anker"
+
+#: elementor/pausar_viewer_default/widget-default.php:4699
+#: elementor/pausar_viewer_default/widget-default.php:4762
+#: elementor/pausar_viewer_default/widget-default.php:4777
+msgid ""
+"A custom anchor link added to the popup's QR code. Only visible on desktop "
+"devices."
+msgstr ""
+"Ein benutzerdefinierter Anker der zum QR Code hinzugefügt wird, der auf "
+"Desktop-Browser angezeigt wird."
+
+#: elementor/pausar_viewer_default/widget-default.php:4700
+msgid ""
+"Add a custom ID without the Pound key at the beginning and avoid special "
+"characters such as periods, commas or quotation marks"
+msgstr ""
+"Fügen Sie eine benutzerdefinierte ID ohne Raute (#) und ohne Sonderzeichen "
+"(Punkt, Komma, Fragezeichen) am Anfang hinzu"
+
+#: elementor/pausar_viewer_default/widget-default.php:4788
+#: elementor/pausar_viewer_default/widget-default.php:4927
+#: elementor/pausar_viewer_default/widget-default.php:4941
+msgid "Autostart AR with QR Code"
+msgstr "AR über QR-Code automatisch starten"
+
+#: elementor/pausar_viewer_default/widget-default.php:4794
+msgid ""
+"Starts the AR scene automatically when redirected via popup QR code, if "
+"possible. Ignored if the widget is fully integrated into an iframe."
+msgstr ""
+"Startet die AR-Szene automatisch, wenn über das Popup (QR-Code) umgeleitet "
+"wird, sofern möglich. Wird ignoriert, wenn das Widget vollständig über ein "
+"Iframe integriert ist."
+
+#: elementor/pausar_viewer_default/widget-default.php:4959
+#: elementor/pausar_viewer_default/widget-default.php:4971
+#: elementor/pausar_viewer_default/widget-default.php:4985
+msgid "Hide Watermark"
+msgstr "Wassermarke entfernen"
+
+#: elementor/pausar_viewer_default/widget-default.php:5003
+#: elementor/pausar_viewer_default/widget-default.php:5037
+#: elementor/pausar_viewer_default/widget-default.php:5057
+msgid "Iframe mode"
+msgstr "Iframe Modus"
+
+#. translators: 1: Preview Link with open tag, 2: Link close tag.
+#: elementor/pausar_viewer_default/widget-default.php:5011
+#: elementor/pausar_viewer_default/widget-default.php:5046
+#: elementor/pausar_viewer_default/widget-default.php:5066
+msgid ""
+"Changes the function of the popup and forces the widget into full screen "
+"mode. (visible on live page or %1$s preview mode %2$s)."
+msgstr ""
+"Ändert die Funktion des Popups und zwingt das Widget in den Vollbildmodus. "
+"(sichtbar auf der Liveseite oder im %1$s Vorschaumodus %2$s)."
+
+#: elementor/pausar_viewer_default/widget-default.php:5020
+msgid "Iframe host URL"
+msgstr "URL der Iframe-Hostseite"
+
+#: elementor/pausar_viewer_default/widget-default.php:5026
+msgid ""
+"The complete URL of the host page where the iframe is to be embedded. "
+"Overrides the QR code generation link."
+msgstr ""
+"Die vollständige URL der Hostseite, auf der das Iframe eingebettet werden "
+"soll. Überschreibt den Link der QR-Code-Generierung."
+
+#: elementor/pausar_viewer_default/widget-default.php:5027
+msgid "Add a valid URL including optional parameters and anchors."
+msgstr ""
+"Fügen Sie eine gültige URL einschließlich optionaler Parameter und Anker "
+"hinzu."
+
+#: pausar-main.php:105
+msgid "Augmented features with Pro!"
+msgstr "Kaufe jetzt Pro!"
+
+#: pausar-version.php:106
+msgid "PausAR is not running because your Wordpress version is out of date"
+msgstr "PausAR wird nicht ausgeführt, da die Wordpress-Version veraltet ist"
+
+#. translators: %s is replaced with the required version of Wordpress for the plugin (Min-Version)
+#: pausar-version.php:111
+msgid "Update to Wordpress %s or higher"
+msgstr "Aktualisiere auf Version %s oder höher"
+
+#: pausar-version.php:122
+msgid "PausAR is not running because PHP is out of date"
+msgstr "PausAR wird nicht ausgeführt, da die PHP-Version veraltet ist"
+
+#. translators: %s is replaced with the required version of PHP for the plugin (Min-Version)
+#: pausar-version.php:127
+msgid "Update to PHP %s or higher"
+msgstr "Aktualisiere auf Version %s oder höher"
+
+#. translators: 1: Plugin name 2: Elementor 3: Required Elementor version
+#: pausar-version.php:165
+msgid "%1$s requires %2$s version %3$s or greater."
+msgstr "%1$s benötigt %2$s Version %3$s oder höher."
+
+#. translators: %1$s is replaced with the Admin-Name (Wordpress)
+#: pausar.php:74 pausar.php:91
+msgid "Hey %1$s"
+msgstr "Hi %1$s"
+
+#. translators: %2$s is replaced with the Plugin Name and %5$s with the Freemius Link
+#: pausar.php:76 pausar.php:93
+msgid ""
+"Please help us improve %2$s! If you opt-in, some data about your usage of "
+"%2$s will be sent to %5$s. If you skip this, that's okay! %2$s will still "
+"work just fine."
+msgstr ""
+"Bitte helfen Sie uns, %2$s zu verbessern! Wenn Sie sich anmelden, werden "
+"einige Daten über Ihre Nutzung von %2$s an %5$s gesendet. Wenn Sie dies "
+"überspringen, ist das in Ordnung! %2$s wird immer noch einwandfrei "
+"funktionieren."
+
+#~ msgid "The user interface is partially configured"
+#~ msgstr "Die Benutzeroberfläche ist teilweise konfiguriert"
+
+#~ msgid ""
+#~ "All required text fields have been filled in. To ensure that the UI can "
+#~ "link as desired, an %1$s http://%2$s or %1$s https://%2$s should be added "
+#~ "to the link."
+#~ msgstr ""
+#~ "Alle erforderlichen Textfelder wurden ausgefüllt. Damit die UI wie "
+#~ "gewünscht verlinken kann, sollte dem Link noch ein %1$s http://%2$s bzw. "
+#~ "%1$s https://%2$s hinzugefügt werden."
+
+#~ msgid "Invalid characters found"
+#~ msgstr "Ungültige Zeichen gefunden"
+
+#~ msgid ""
+#~ "The anchor link should not contain single or double quotation marks. "
+#~ "Special characters such as periods or commas should also be avoided."
+#~ msgstr ""
+#~ "Der Ankerlink sollte keine einfachen oder doppelten Anführungszeichen "
+#~ "enthalten. Auch Sonderzeichen wie Punkte oder Kommas sollten vermieden "
+#~ "werden."
+
+#, fuzzy
+#~| msgid "AR Scene"
+#~ msgid "Autostart AR Scene"
+#~ msgstr "AR Szene"
+
+#~ msgid "Filetype(s): .usdz, .reality"
+#~ msgstr "Dateitypen: .usdz, .reality"
+
+#~ msgid "Filetype: .usdz"
+#~ msgstr "Dateitype: .usdz"
+
+#~ msgid ""
+#~ "* Not all information is equally relevant for Android and iOS devices. "
+#~ "The representation of the AR scene may differ between devices. In order "
+#~ "to display the user interface without errors, all fields should still be "
+#~ "filled out."
+#~ msgstr ""
+#~ "* Nicht alle Angaben sind für Android- und iOS-Geräte gleichermaßen "
+#~ "relevant. Die Darstellung der AR-Szene kann je nach Gerät unterschiedlich "
+#~ "ausfallen. Um die Benutzeroberfläche fehlerfrei anzuzeigen, sollten alle "
+#~ "Felder ausgefüllt sein."
+
+#~ msgid ""
+#~ "Overrides the style of the entire widget and displays it in full screen "
+#~ "(visible on live page or %1$s preview mode %3$s). To use it in an iframe, "
+#~ "a script is required on the host side. %2$s Learn more %3$s"
+#~ msgstr ""
+#~ "Überschreibt den Style des gesamten Widget und zeigt es im Vollbild an "
+#~ "(sichtbar auf Live-Seite oder %1$s Vorschau-Modus %3$s). Für die "
+#~ "Verwendung in einem Iframe wird noch ein Script auf der Host-Seite "
+#~ "benötigt. %2$s Erfahre mehr %3$s"
+
+#~ msgid "Zoom (%)"
+#~ msgstr "Zoom (%)"
+
+#, fuzzy
+#~| msgid ""
+#~| "Filetype(s): .wav, .mp3 | Only applied to scenes with .glb files. For "
+#~| "Apple devices, sound files are embedded directly into the model via "
+#~| "%1$sreality composer%1$s. %2$s Learn more %3$s"
+#~ msgid ""
+#~ "Filetype(s): .wav, .mp3 | Only applied to scenes with .glb files. For "
+#~ "Apple devices, sound files are embedded directly into the model via %1$ "
+#~ "sreality composer %1$s. %2$s Learn more %3$s"
+#~ msgstr ""
+#~ "Dateitypen: .wav, .mp3 | Wird nur bei Szenen mit .glb Dateien verwendet. "
+#~ "Bei Apple Geräten werden Sounddateien direkt über den %1$ Reality "
+#~ "Composer %1$ in das Model eingebettet. %2$s Mehr erfahren %3$s"
+
+#~ msgid "Apache-Server detected."
+#~ msgstr "Apache-Server erkannt."
+
+#~ msgid ""
+#~ "Additional MIME types have been added to the \".htaccess\" file and will "
+#~ "be removed upon proper deactivation/uninstallation"
+#~ msgstr ""
+#~ "Zusätzliche MIME-Typen wurden zur \".htaccess\" Datei hinzugefügt und "
+#~ "werden bei der Deaktivierung/Deinstallation entfernt"
